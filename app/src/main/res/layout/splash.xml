@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#030303"
+    android:orientation="vertical"
+    android:weightSum="10"
+  >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/title"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/spline" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+<pl.droidsonroids.gif.GifImageView
+
+    android:layout_centerInParent="true"
+   android:layout_gravity="center"
+    android:src="@drawable/mainanimation"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp" />
+
+        </RelativeLayout>
+        <!--<ImageView
+
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_7sdp"
+
+            android:src="@drawable/splashlogoaquatic"
+           />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.6"
+        >
+
+    </LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+       <LinearLayout
+           android:gravity="bottom"
+           android:layout_weight="5"
+           android:layout_width="match_parent"
+           android:layout_height="0dp">
+           <View
+
+               android:background="@drawable/lineeee"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"></View>
+       </LinearLayout>
+        <LinearLayout
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <View
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/lineeee"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/biz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <View
+
+                android:background="@drawable/lineeee"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <View
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/lineeee"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Powered By BizVenture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

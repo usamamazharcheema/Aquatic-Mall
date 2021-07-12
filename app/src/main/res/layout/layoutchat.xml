@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#e6e7e8"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_above="@+id/bottonerite"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_bg"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/chatback"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/chatbackimg"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:src="@drawable/backarrowfragment" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="8.5"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/chatheader"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#000000"
+                android:text="Guest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Chat With Us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+                <LinearLayout
+                    android:id="@+id/scollllayout"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/bottonerite"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+        <RelativeLayout
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/messagefield"
+            android:background="@drawable/layout_bg"
+           android:padding="@dimen/_7sdp"
+            android:hint="Type a message"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+            <ProgressBar
+                android:visibility="gone"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:id="@+id/progressBarloading"
+                android:progressDrawable="@drawable/cicularprogress"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/sendmessage"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="send"
+            android:background="#29BBBD"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <ProgressBar
+
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/mainprogress"
+        android:progressDrawable="@drawable/cicularprogress"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spalashbacksnd"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/myriad_pro_bold"
+            android:text="Al Bari"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_30sdp" />
+        <View
+            android:background="@drawable/lineeee"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <ImageView
+
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_7sdp"
+
+            android:src="@drawable/albarilogosplash"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.8"
+        >
+
+        <TextView
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:id="@+id/introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/myriadpro_regular"
+            android:text="Al-Bari Group of Companies has been established with a vision of introducing the trend of transparency in the business market of Pakistan. We are constantly adapting to the needs of the rapidly changing corporate industry. We are here to initiate change."
+            android:textAlignment="center"
+            android:textColor="#cccccc"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

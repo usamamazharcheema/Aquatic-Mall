@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D3D3D3"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical"
+        >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+android:padding="@dimen/_10sdp"
+        android:background="@drawable/layoutgraph"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <RelativeLayout
+android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_23sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.github.mikephil.charting.charts.LineChart
+
+                        android:id="@+id/chart1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="10"
+                android:layout_height="@dimen/_80sdp">
+                <LinearLayout
+                    android:background="#000000"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="1dp">
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent">
+<TextView
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="#000000"
+    android:textSize="@dimen/_10sdp"
+    android:text="Date"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#000000"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="1dp">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_width="@dimen/_80sdp"
+            android:gravity="center_horizontal"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:background="#000000"
+                >
+
+
+            </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="2"
+           >
+           <TextView
+               android:textStyle="bold"
+               android:textColor="#000000"
+               android:text="Price sqft"
+               android:rotation="270"
+               android:textSize="@dimen/_10sdp"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+
+       </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="#000000"
+            >
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

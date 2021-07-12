@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/layout_bg"
+    android:weightSum="10"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/featurelayout"
+            android:weightSum="10"
+            android:orientation="horizontal"
+
+            android:layout_weight="4.9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/aboutfeatureback"
+                android:gravity="center"
+                android:layout_weight="2.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/aboutfeaturebackimg"
+                    android:src="@drawable/backarrowfragment"
+
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_13sdp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutfeatures"
+android:background="@drawable/featureselectedbar"
+                android:gravity="center"
+                android:layout_weight="7.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/featuretext"
+
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Features"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/exclusivelayout"
+android:background="@drawable/featurebar"
+
+            android:layout_weight="4.9"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/exclusivetext"
+
+                android:textColor="#000000"
+                android:textSize="@dimen/_14sdp"
+                android:text="Exclusive"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:weightSum="10"
+
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/featureback"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/featuresback"
+                android:onClick="back"
+                android:src="@drawable/backarrowfragment"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_13sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+<TextView
+    android:id="@+id/itemname"
+    android:text="Items"
+    android:textSize="@dimen/_15sdp"
+    android:textStyle="bold"
+    android:textColor="#000000"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/featurenext"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/featuresnext"
+                android:onClick="next"
+                android:src="@drawable/featurenextnew"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_13sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+    <LinearLayout
+
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:id="@+id/featurefragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

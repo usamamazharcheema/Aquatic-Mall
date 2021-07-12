@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E7E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.03" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_weight="9"
+            android:background="@drawable/contact_us_main_box"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/contacustitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:fontFamily="@font/myriad_pro_bold"
+                    android:text="Aquatic Mall"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4" />
+
+            <LinearLayout
+                android:id="@+id/emaillayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:id="@+id/aquatic_emailimg"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:src="@drawable/email" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="@string/aquatic_email"
+                        android:id="@+id/aquatic_emailtv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:backgroundTint="#aeacac"
+                        android:fontFamily="@font/myriad_pro_bold"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/contact_us_line">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/phonelayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:id="@+id/aquatic_phoneimg"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:src="@drawable/phone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="@string/aquatic_phone"
+                        android:id="@+id/aquatic_phonetv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:backgroundTint="#aeacac"
+                        android:fontFamily="@font/myriad_pro_bold"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/contact_us_line">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weblayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:id="@+id/aquatic_websiteimg"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:src="@drawable/website" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="@string/aquatic_website"
+                        android:id="@+id/aquatic_websitetv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:backgroundTint="#aeacac"
+                        android:fontFamily="@font/myriad_pro_bold"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/contact_us_line">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/facebooklayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:id="@+id/aquatic_facebookimg"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:src="@drawable/facebook" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="@string/aquatic_facebook"
+                        android:id="@+id/aquatic_facebooktv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:backgroundTint="#aeacac"
+                        android:fontFamily="@font/myriad_pro_bold"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/contact_us_line">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/locationlayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:id="@+id/aquatic_loactionimg"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:src="@drawable/location" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:orientation="vertical"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="@string/aquatic_location1"
+                        android:id="@+id/aquatic_addresstv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:backgroundTint="#aeacac"
+                        android:maxLines="2"
+                        android:fontFamily="@font/myriad_pro_bold"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="@string/aquatic_location2"
+                        android:id="@+id/aquatic_addresstv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:backgroundTint="#aeacac"
+                        android:maxLines="2"
+                        android:fontFamily="@font/myriad_pro_bold"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/contact_us_line">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.2"
+                android:gravity="center">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

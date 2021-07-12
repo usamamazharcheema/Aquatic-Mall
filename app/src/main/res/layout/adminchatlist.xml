@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+ android:layout_height="match_parent">
+    <ProgressBar
+
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:id="@+id/progressBarloading"
+        android:progressDrawable="@drawable/cicularprogress"
+        android:layout_centerInParent="true"
+        />
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/chatlistslayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+   android:layout_height="match_parent">
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_bg"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/chatlistback"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/chatlistbackimg"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:src="@drawable/backarrowfragment" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="8.5"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#000000"
+                android:text="Chats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chatlists"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

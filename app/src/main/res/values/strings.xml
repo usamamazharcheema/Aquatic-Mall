@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">The Aquatic Mall</string>
+    <string name="aquatic_email"><u>contact@theaquaticmall.com</u></string>
+    <string name="aquatic_phone"><u>051-5732200</u></string>
+    <string name="aquatic_website"><u>http://www.theaquaticmall.com/</u></string>
+    <string name="aquatic_facebook"><u>https://www.facebook.com/TheAquaticMall/</u></string>
+    <string name="aquatic_location1"><u>The Aquatic Mall Building, T Chowk, </u></string>
+    <string name="aquatic_location2"><u>GT Road, Islamabad</u></string>
+    <string name="aquatic_instagram"><u>https://www.instagram.com/theaquaticmall/</u></string>
+
+    <string name="bizventure_email"><u>contact@bizventure.info</u></string>
+    <string name="bizventure_phone"><u>051-5418233</u></string>
+    <string name="bizventure_website"><u>https://www.bizventure.info/</u></string>
+    <string name="bizventure_facebook"><u>https://www.facebook.com/bizventuremarketing/</u></string>
+    <string name="bizventure_location1"><u>The Aquatic Mall Building, T Chowk, </u></string>
+    <string name="bizventure_location2"><u>GT Road, Islamabad</u></string>
+    <string name="bizventure_instagram"><u>https://www.instagram.com/theaquaticmall/</u></string>
+
+    <string name="greenearth_email"><u>contact@greenearth.pk</u></string>
+    <string name="greenearth_phone"><u>051-5732200</u></string>
+    <string name="greenearth_website"><u>https://greenearth.pk/</u></string>
+    <string name="greenearth_facebook"><u>https://www.facebook.com/realestategreenearth/</u></string>
+    <string name="greenearth_location1"><u>Ground Floor, Plaza 33, Civic Center, </u></string>
+    <string name="greenearth_location2"><u>Phase 4, Bahria Town</u></string>
+    <string name="greenearth_instagram"><u>https://www.instagram.com/greenearthrealestate/</u></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pin_content_desc">PIN input field</string>
+
+    <string name="sign_up"><u><b>Sign Up</b></u></string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="facebooid">405486659896765</string>
+
+</resources>

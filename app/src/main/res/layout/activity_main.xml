@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e7e8"
+    tools:context="com.example.androiddeveloper.aquatic_mall.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_weight="9"
+            android:weightSum="10"
+            android:layout_height="0dp">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_below="@+id/bar"
+                android:id="@+id/mainactivitydrawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/bar"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp">
+                <LinearLayout
+
+                    android:background="@drawable/homeupper"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="10"
+                    android:weightSum="10">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/trending"
+                            android:onClick="phone"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/homeicontop"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_18sdp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:onClick="phone"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_phone_iocn"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_21sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/homeicon"
+                android:background="@drawable/newicon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp" />
+        </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+
+android:weightSum="10"
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+android:layout_weight="1"
+            android:layout_height="0dp"
+
+            android:background="@drawable/homelowerbar"
+            android:elevation="4dp"
+            >
+            <TextView
+                android:onClick="invsetnow"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="#fff"
+                android:text="Invest Now"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+<LinearLayout
+    android:background="@drawable/drawermenuback"
+    android:layout_weight="2"
+    android:layout_width="0dp"
+    android:gravity="center"
+    android:onClick="drawer"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/drawepic"
+        android:src="@drawable/homedrawericon"
+        android:onClick="drawer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_18sdp" />
+</LinearLayout>
+
+            <TextView
+                android:id="@+id/sellnowtext"
+                android:onClick="sellnow"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="#fff"
+                android:text="Sell Now"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/chaticon"
+        android:onClick="chatfragment"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/chaticon"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp" />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "812321787598",
+    "firebase_url": "https://aquaticmall-c338b.firebaseio.com",
+    "project_id": "aquaticmall-c338b",
+    "storage_bucket": "aquaticmall-c338b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812321787598:android:b10f3c258e8aa285",
+        "android_client_info": {
+          "package_name": "com.bizventure.androiddeveloper.aquatic_mall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812321787598-dm3l8rn1u1amf22d732kjobakqa3e9hk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bizventure.androiddeveloper.aquatic_mall",
+            "certificate_hash": "1945f7c14c3177891acda870248b0a35f07d7ccc"
+          }
+        },
+        {
+          "client_id": "812321787598-rthd31k58rl91t4ges17lat6hp8gcfq0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bizventure.androiddeveloper.aquatic_mall",
+            "certificate_hash": "f4ff89516414c0f6710d33f339e096e4d55c7996"
+          }
+        },
+        {
+          "client_id": "812321787598-64igt7kvm4nv03clo9dkkqq8a53s8cgu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bizventure.androiddeveloper.aquatic_mall",
+            "certificate_hash": "9d043bcd329cc2e40b2a979e3c1fe790c8797519"
+          }
+        },
+        {
+          "client_id": "812321787598-hg3de46t2tpjsjpe992vmgqe7lajdiv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY_Lakl0JQLgoX4Mt4cQrXGJCUaogJ7b4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812321787598-hg3de46t2tpjsjpe992vmgqe7lajdiv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

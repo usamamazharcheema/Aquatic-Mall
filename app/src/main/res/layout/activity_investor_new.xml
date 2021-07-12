@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e6e7e8"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:orientation="horizontal">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="@drawable/ratebg"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:onClick="backclick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.70"
+            android:id="@+id/investor_back"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:src="@drawable/backarrowfragment"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="My Profile"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="@dimen/_15sdp"
+            android:layout_weight="4"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_6sdp"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:background="@drawable/personalbg"
+
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Detail"
+
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Code No: "
+
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A4A137839712"
+                    android:id="@+id/account_codeno"
+
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="#e6e7e8"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:text="SHOP # 82"
+                        android:id="@+id/account_shopno"
+
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:text="082GF01"
+                        android:gravity="center"
+                        android:id="@+id/account_shopcode"
+
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp"
+                         />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_8sdp"
+                android:background="#ffffff"
+                android:gravity="center">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:background="#fff"
+
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                   android:id="@+id/account_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+                    <LinearLayout
+                        android:weightSum="10"
+                        android:orientation="horizontal"
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5"
+                            android:text="Initial Deposit Date"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/account_date"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5"
+                            android:text="4-10-2018"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.04"
+                        android:background="@drawable/profileline" />
+                    <LinearLayout
+                        android:weightSum="10"
+                        android:orientation="horizontal"
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5"
+                            android:text="Total Amount"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/account_totalamount"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5"
+                            android:text="10000000"
+                            android:textSize="@dimen/_13sdp" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.04"
+                        android:background="@drawable/profileline" />
+                    <LinearLayout
+                        android:weightSum="10"
+                        android:orientation="horizontal"
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5"
+                            android:text="Down Payment"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/account_downpayment"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5"
+                            android:text="760000"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.04"
+                        android:background="@drawable/profileline" />
+                    <LinearLayout
+                        android:weightSum="10"
+                        android:orientation="horizontal"
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5"
+                            android:text="Floor"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/account_floor"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5"
+                            android:text="Ground Floor"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.04"
+                        android:background="@drawable/profileline" />
+                    <LinearLayout
+                        android:weightSum="10"
+                        android:orientation="horizontal"
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <TextView
+
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5"
+                            android:gravity="center"
+                            android:text="Rate"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/account_rate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5"
+                            android:text="39000000 Pkr"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.04"
+                        android:background="@drawable/profileline" />
+                    <LinearLayout
+                        android:weightSum="10"
+                        android:orientation="horizontal"
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                    <TextView
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5"
+                        android:gravity="center"
+                        android:text="Area"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/account_area"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5"
+                        android:text="300 Sqft"
+                        android:textSize="@dimen/_13sdp" />
+                    </LinearLayout>
+                         </LinearLayout>
+
+
+
+                <RelativeLayout
+
+                    android:id="@+id/progresslayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ProgressBar
+                        android:id="@+id/progressbaarnew"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+
+                        android:progressDrawable="@drawable/circularprogress" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"
+                android:background="#ffffff"
+                android:gravity="center">
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/installmentlayoutupper"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_46sdp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Installments"
+
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"
+                android:background="#ffffff"
+                android:gravity="center">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/installmentlayout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_290sdp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ProgressBar
+                        android:layout_centerInParent="true"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:id="@+id/progressBarcart"
+                        android:progressDrawable="@drawable/circularprogress"
+
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <RelativeLayout
+
+                        android:id="@+id/detailinstall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <include
+                            layout="@layout/installent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true" />
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_marginTop="@dimen/_50sdp"
+                            android:id="@+id/install_recview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:paddingBottom="@dimen/_7sdp"
+                            android:scrollbarThumbVertical="@drawable/scrollbar"
+                            />
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_below="@+id/install_recview"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp">
+                            <LinearLayout
+                                android:layout_weight="2.3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"></LinearLayout>
+                            <TextView
+                                android:gravity="center"
+                                android:text="Total"
+                                android:layout_weight="1.7"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/duetotal"
+                                android:layout_weight="1.9"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/paidtotal"
+                                android:layout_weight="1.7"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:weightSum="10"
+                android:orientation="vertical"
+android:id="@+id/totalamoountslayout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <LinearLayout
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="Total Paid Amount"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+
+                            android:gravity="center"
+                            android:text=":"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="#000000"
+                            android:id="@+id/totalpaidamounttext"
+                            android:text="100000000 "
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="Total Remaining Amount"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:gravity="center"
+                            android:text=":"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="#000000"
+android:id="@+id/totalremainingamouttext"
+                            android:text="100000000 "
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_7sdp"
+                android:background="@drawable/profile_l"
+
+                android:orientation="vertical"></LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e6e7e8"
+    >
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/personalbg"
+
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Detail"
+
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="#ffffff"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code No: "
+
+                android:textColor="#000000"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A4A137839712"
+                android:id="@+id/account_codeno"
+
+                android:textColor="#000000"
+                android:textSize="@dimen/_15sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="#e6e7e8"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:text="SHOP # 82"
+                    android:id="@+id/account_shopno"
+
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:text="082GF01"
+                    android:gravity="center"
+                    android:id="@+id/account_shopcode"
+
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_8sdp"
+            android:background="#ffffff"
+            android:gravity="center">
+        </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_250sdp"
+    android:background="#fff">
+    <LinearLayout
+android:visibility="gone"
+        android:id="@+id/account_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="Initial Deposit Date"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/account_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="4-10-2018"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.04"
+            android:background="@drawable/profileline" />
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="Total Amount"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/account_totalamount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="10000000"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.04"
+            android:background="@drawable/profileline" />
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="Down Payment"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/account_downpayment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="760000"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.04"
+            android:background="@drawable/profileline" />
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="Floor"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/account_floor"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="Ground Floor"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.04"
+            android:background="@drawable/profileline" />
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:gravity="center"
+                android:text="Rate"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/account_rate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="39000000 Pkr"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.04"
+            android:background="@drawable/profileline" />
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:gravity="center"
+                android:text="Area"
+                android:textColor="#000"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/account_area"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="300 Sqft"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+
+        android:id="@+id/progresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressbaarnew"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentTop="true"
+
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:progressDrawable="@drawable/circularprogress" />
+    </RelativeLayout>
+
+</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:background="#ffffff"
+            android:gravity="center">
+        </LinearLayout>
+        <LinearLayout
+
+            android:id="@+id/installmentlayoutupper"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rental Returns"
+
+                android:textColor="#000000"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:background="#ffffff"
+            android:gravity="center">
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_height="@dimen/_600sdp"
+        android:layout_width="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/notetext"
+
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp">
+            <TextView
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#000000"
+                android:text="Note :"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+
+                android:text="The Aquatic Mall , The Aquatic Mall , The Aquatic Mall"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <ExpandableListView
+android:layout_below="@+id/notetext"
+            android:nestedScrollingEnabled="true"
+            android:id="@+id/lvExp"
+            android:groupIndicator="@null"
+            android:layout_height="@dimen/_520sdp"
+            android:layout_width="match_parent"/>
+
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_7sdp"
+            android:background="@drawable/profile_l"
+
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#DCDCDC"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_marginTop="@dimen/_6sdp"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        />
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_weight="1.5"
+        android:layout_height="0dp"
+
+        android:background="@drawable/homelowerbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>
+
+
+
+
+
+
+
+    <!-- Side navigation drawer UI -->
+    <ExpandableListView
+        android:id="@+id/navList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+
+        android:background="@drawable/gradiantbackground"
+        android:groupIndicator="@null"
+        android:divider="#80CBC4"
+        android:dividerHeight="0.5dp"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"/>
+
+</android.support.v4.widget.DrawerLayout>

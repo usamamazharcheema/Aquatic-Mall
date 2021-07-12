@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg">
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/top_bar"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_50sdp"
+            android:id="@+id/investorask"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Are you an investor of The Aquatic Mall?"
+
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/_2sdp">
+
+                    <Button
+                        android:id="@+id/yes"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/btnsback"
+                        android:text="yes"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_2sdp">
+
+                    <Button
+                        android:id="@+id/no"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/btnsback"
+                        android:text="no"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/lineeee"></View>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/ratebg"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/rback"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="center">
+
+                <ImageView
+                    android:background="#fff"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:src="@drawable/backarrowfragment" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.2"
+                android:gravity="center_vertical"
+                android:text="Login as Investor"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/investorlayoutdata"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="Code No:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/code"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:hint="A435SdG"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/checkimg"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/tick"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="Verification:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <RadioGroup
+                            android:id="@+id/radiogroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="5"
+
+                                android:text="Using Email Address" />
+
+
+                            <RadioButton
+                                android:id="@+id/phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="5"
+                                android:text="Using Phone Number" />
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom">
+
+                        <View
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/lineeee">
+
+                        </View>
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/sendcode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/btnsback"
+                            android:padding="@dimen/_5sdp"
+                            android:text="send code"
+                            android:textSize="@dimen/_10sdp">
+
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/verifylayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/_20sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Verification Code"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="8"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_20sdp"
+                android:weightSum="10">
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/verify1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/btnsback"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/verify2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/btnsback"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/verify3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/btnsback"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/verify4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/btnsback"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/verify5"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/btnsback"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/verify6"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/btnsback"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/_20sdp">
+
+                    <Button
+                        android:id="@+id/verifycode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/btnsback"
+                        android:gravity="center"
+                        android:text="verify"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText android:id="@+id/pin_hidden_edittext"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:password="true"
+        android:maxLength="6"
+        android:textColor="#00000000"
+        android:contentDescription="@string/pin_content_desc" />
+    <ImageView
+        android:id="@+id/company"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:src="@drawable/newicon" />
+</RelativeLayout>

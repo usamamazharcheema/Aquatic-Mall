@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#333333</color>
+    <color name="colorAccent">#29BBBD</color>
+    <color name="clickbtn">#FFC0CB</color>
+    <color name="ss_colorPrimary">#ffffff</color>
+    <color name="ss_colorPrimaryDark">#ffffff</color>
+    <color name="ss_colorAccent">#95ff00</color>
+
+    <color name="ss_progress_startColor">#29bbbd</color>
+    <color name="ss_progress_endColor">#29bbbd</color>
+    <color name="ss_progress_centerColor">#29bbbd</color>
+
+    <color name="ss_secondaryProgress_startColor">#29bbbd</color>
+    <color name="ss_secondaryProgress_endColor">#29bbbd</color>
+    <color name="ss_secondaryProgress_centerColor">#29bbbd</color>
+
+    <color name="ss_background_startColor">#ff9d9e9d</color>
+    <color name="ss_background_endColor">#ff747674</color>
+    <color name="ss_background_centerColor">#ff5a5d5a</color>
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D3D3D3"
+
+    >
+    <ImageView
+        android:id="@+id/loadingicon"
+        android:layout_centerInParent="true"
+        android:src="@drawable/newicon"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp" />
+<LinearLayout
+    android:id="@+id/graphlayout"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+
+android:visibility="gone"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/fragmentbar"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/trendingbacklayout"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/trendingbackimg"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:src="@drawable/backarrowfragment" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="8.5"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#000000"
+                android:text="Rate Trend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+android:background="@drawable/layoutbg"
+
+            android:weightSum="10"
+            android:layout_height="match_parent">
+        <Button
+            android:visibility="gone"
+
+            android:background="@drawable/backarrow"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+
+            android:layout_height="@dimen/_25sdp" />
+            <LinearLayout
+                android:layout_weight="4.5"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+
+
+                    android:text="SHOP"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_16sdp"
+                    android:id="@+id/itemstrending"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="3.2"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:layout_height="match_parent">
+
+
+            <Spinner
+                android:background="@drawable/dropdown"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/_18sdp"
+                android:id="@+id/trendingspiner"
+                android:layout_height="@dimen/_12sdp">
+            </Spinner>
+            </LinearLayout>
+        <Button
+            android:visibility="gone"
+            android:background="@drawable/nextarrow"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+
+            android:layout_height="@dimen/_25sdp" />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_weight="7.4"
+    >
+            <android.support.v4.view.ViewPager
+                android:id="@+id/graphpager"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        android:background="@drawable/homebars"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/backtrend"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/graphback"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/floortrending"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:text="Floor 1"
+
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="@dimen/_60sdp" />
+        <ImageView
+            android:id="@+id/nexttrend"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/graphnext"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.androiddeveloper.aquatic_mall.Activities.SmsVerification">
+<EditText
+    android:id="@+id/phonenumber"
+    android:hint="Enter Your Phone number "
+    android:inputType="phone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <Button
+        android:onClick="sensms"
+      android:text="sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/verificationcode"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:hint="Enter Your Phone number "
+        android:inputType="textPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="verify"
+        android:text="verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

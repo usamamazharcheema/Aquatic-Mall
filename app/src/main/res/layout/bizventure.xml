@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E7E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.03" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_weight="1"
+            android:background="@drawable/home_bars"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:src="@drawable/backarrowfragment"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2.5"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myriad_pro_bold"
+                    android:text="Contact Us"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_weight="9"
+            android:background="@drawable/contact_us_main_box"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:fontFamily="@font/myriad_pro_bold"
+                    android:text="Bizventure Marketing"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:id="@+id/bizventure_emailimg"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:src="@drawable/email" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:text="@string/bizventure_email"
+                        android:id="@+id/bizventure_emailtv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:backgroundTint="#aeacac"
+                        android:fontFamily="@font/myriad_pro_bold"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/contact_us_line">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:id="@+id/bizventure_phoneimg"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:src="@drawable/phone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:text="@string/bizventure_phone"
+                        android:id="@+id/bizventure_phonetv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:backgroundTint="#aeacac"
+                        android:fontFamily="@font/myriad_pro_bold"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/contact_us_line">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:id="@+id/bizventure_websiteimg"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:src="@drawable/website" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:text="@string/bizventure_website"
+                        android:id="@+id/bizventure_websitetv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:backgroundTint="#aeacac"
+                        android:fontFamily="@font/myriad_pro_bold"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/contact_us_line">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:id="@+id/bizventure_facebookimg"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:src="@drawable/facebook" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:text="@string/bizventure_facebook"
+                        android:id="@+id/bizventure_facebooktv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:backgroundTint="#aeacac"
+                        android:fontFamily="@font/myriad_pro_bold"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/contact_us_line">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:id="@+id/bizventure_loactionimg"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:src="@drawable/location" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center|left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="@string/bizventure_location1"
+                        android:id="@+id/bizventure_addresstv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:backgroundTint="#aeacac"
+                        android:fontFamily="@font/myriad_pro_bold"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:text="@string/bizventure_location2"
+                        android:id="@+id/bizventure_addresstv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:backgroundTint="#aeacac"
+                        android:fontFamily="@font/myriad_pro_bold"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/contact_us_line">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.2"
+                android:gravity="center">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

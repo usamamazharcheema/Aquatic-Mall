@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_weight="10"
+       >
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:weightSum="12">
+
+            <LinearLayout
+                android:padding="@dimen/_1sdp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.2">
+
+                <ImageView
+                    android:id="@+id/featureimage"
+                    android:background="@drawable/apartment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myriad_pro_bold"
+                    android:text="Booking Request"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:gravity="center">
+
+                <TextView
+android:id="@+id/item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myriad_pro_bold"
+                    android:text="Apartment"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/unitcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myriadpro_regular"
+                    android:text="Unit No: 5"
+                    android:textAlignment="center"
+                    android:textColor="#484848"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/shopcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myriadpro_regular"
+                    android:text="Code: KAC45"
+                    android:textAlignment="center"
+                    android:textColor="#484848"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/floorno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myriadpro_regular"
+                    android:text="Floor No: 7th"
+                    android:textAlignment="center"
+                    android:textColor="#484848"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg">
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/ratebg"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/rback"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="center">
+
+                <ImageView
+                    android:background="#fff"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:src="@drawable/backarrowfragment" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.2"
+                android:gravity="center_vertical"
+                android:text="Login as Investor"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/investorlayoutdata"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="REGISTRATION NO:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/code"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:hint="A435SdG"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="CNIC:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/cnic"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:maxLength="15"
+                            android:hint="A435SdG"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="SELECT PROJECT:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Spinner
+                            android:id="@+id/selectproject"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+android:background="@drawable/spinnerback"
+
+                            android:hint="A435SdG"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+                        <Button
+                             android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/sendcode"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/senderchatback"
+                            android:padding="@dimen/_5sdp"
+                            android:text="submit"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+
+                            android:textSize="@dimen/_15sdp">
+
+                        </Button>
+</RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androiddeveloper.aquatic_mall">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/newicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.Phone" />
+        <activity android:name=".Activities.Opnecomments" />
+        <activity android:name=".investorfirst.Investoryes" />
+        <activity android:name=".requesttobook.LoginAsInvestor" />
+        <activity android:name=".investorfirst.LoginAsInvestor" />
+        <activity android:name=".Activities.Selling_Investor" />
+
+        <meta-data
+            android:name="com.example.androiddeveloper.aquatic_mall.glideProgressBar.OkHttpProgressGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:name=".StatusActivity"
+            android:exported="true" />
+        <activity android:name=".requesttobook.LogIn_asGUest_Register" />
+        <activity android:name="com.bizventure.androiddeveloper.aquatic_mall.Animationopen" />
+        <activity android:name=".fragments.DrawerFragment" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Splash"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+        <activity android:name=".Activities.SmsVerification" />
+        <activity android:name=".Activities.I_Profile" />
+        <activity android:name=".Activities.About" />
+        <activity android:name=".fragments.InvestorProfile" />
+        <activity android:name=".fragments.Investor_Installments" />
+        <activity android:name=".Activities.NotificationActivity"></activity>
+        <activity android:name=".fragments.InvestorPropertyNew"></activity>
+        <activity android:name=".Activities.InvestoreDetailInfonew"></activity>
+        <activity android:name=".Activities.InvestorRentalDetail"></activity>
+
+        <receiver android:name=".Receiver.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_application_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDY_Lakl0JQLgoX4Mt4cQrXGJCUaogJ7b4" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service android:name=".FireBaseConnection.MyFireBaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FireBaseConnection.MyFirebaseMessageService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Activities.addproperty_sale">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
